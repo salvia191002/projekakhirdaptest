@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png" type="image/png" sizes="16x16">
+    <title>My Pages</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      $(document).ready(function() {
+        $(".btn-primary").click( function() {
+           var firstname = $("#first-name").val();
+           var lastname =  $("#last-name").val();
+           var username =  $("#username").val();
+           var city =  $("#city").val();
+           var state =  $("#state").val();
+           var zip =  $("#zip").val();
+           var valid = $("#validationDefaultUsername").val();
+           if (firstname == "Salvia" && lastname == "Kurniasari" && username == "via2002" && city == "Malang" && state == "Mojolangu" && zip == "1234") {
+              Swal.fire({ 
+                    type: 'success',
+                    title: 'BERHASIL LOG IN!',
+              });
+           }
+        });
+       });
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/206142bfe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <img class="navbar-brand"src="img/logo.png" width="100px">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a class="nav-link" href="#"  class="text-white">Home <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portofolio </a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav> 
+
+    <!-- Hero Image -->
+    <div class="hero-image" style="height: 100%;">
+      <div class="hero-text">
+        <h1 style="font-style: Georgia; color: #fff; font-size:50px;">Hello, I am Salvia</h1>
+        <p>Undergraduete Student of Brawijaya University</p>
+        <button onclick="window.location.href='https://wa.me/6282132504620'">HIRE ME</button>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="about-section">
+      <h1>About Me</h1>
+        <div class="ok">
+            <p>Hello, My name is Salvia Dyah Kurniasari. I am usually called Via or Salvia. I was born in Malang, October 19 2002. 
+                I come from Trenggalek. When I created this website, I was 20 years old. My hobbies are reading and watching anime.
+                 My favorite food is noodles and my favorite drink is chocolate ice. My life motto is "Never be someone else, be yourself".
+                  The personality that I have is that I feel myself to be a shy person, but when I get to know someone I will be friendly.
+                   I am also a person who likes to help friends when they need help. I am someone with a fairly high level of competitiveness 
+                   so I don't give up easily</p>
+              <p>Currently I live in Malang. I live in Malang to continue my education. In 2018, I studied at SMK Telkom Malang majoring
+                 in Computer and Network Engineering. I studied there for 3 years. At SMK, I had internship experience as a graphic designer
+                  at an agency for 3 months.</p>
+             <p>Currently I am studying at Brawijaya University, faculty of computer science with student ID number 215150601111006. 
+                The study program I am taking is Information Technology Education. In my opinion, this study program has quite interesting job prospects
+                 because there are so many job prospects that can be obtained. Among others, being a teacher of Information Technology, 
+                 Technology creator context, data analyst, technology designer, and others.</p>
+        </div>
+    </div>
+
+    <!-- Portofolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container px-4 px-lg-5">
+          <div class="content-section-heading text-center">
+              <h3 class="text-secondary mb-0">Portfolio</h3>
+              <h2 class="mb-5">Recent Projects</h2>
+          </div>
+          <div class="row gx-0">
+              <div class="col-lg-6">
+                  <a class="portfolio-item" href="https://github.com/IamPutra/apps">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <div class="h2">Website Design</div>
+                              <p class="mb-0">I contribute to building the branding of the organization known as EM Apps.</p>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/port1.png" alt="..." />
+                  </a>
+              </div>
+              <div class="col-lg-6">
+                  <a class="portfolio-item" href="https://drive.google.com/drive/folders/1l-vln7pGVzZZpkY2rsrAr5RXpFsd3lee?usp=share_link">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <div class="h2">Graphic Design</div>
+                              <p class="mb-0">Various graphic design products such as posters, instastories, logos, and watermarks.</p>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/port2.png" alt="..." />
+                  </a>
+              </div>
+              <div class="col-lg-6">
+                  <a class="portfolio-item" href="https://linktr.ee/salvia_dyk">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <div class="h2">Journalist</div>
+                              <p class="mb-0">
+                                The journalistic products that I have done are magazine layouts, writing products, and being a reporter for several events.</p>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/port3.png" alt="..." />
+                  </a>
+              </div>
+              <div class="col-lg-6">
+                  <a class="portfolio-item" href="#!">
+                      <div class="caption">
+                          <div class="caption-content">
+                              <div class="h2">Networking</div>
+                              <p class="mb-0">Network related activities that I do e.g. OS installation, router installation, etc.</p>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/port4.png" alt="..." />
+                  </a>
+              </div>
+          </div>
+      </div>
+    </section>
+
+  <!-- Experiences -->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Experiences</h3>
+                <h2 class="mb-5">Recent Experiences</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="img-fluid" src="img/logo_kbmpti2.png" alt="..." style="padding-top: 40px;"  width="120px"/></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Sep 2021 - Feb 2022 </h4>
+                            <h4 class="subheading">KBMPTI 2021</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-white">Staff in the Advocacy Department. I got an assignment related to scholarship information that can be used for all students, especially in the field of computer science.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="img-fluid" src="img/logo_kbmpti2.png" alt="..." style="padding-top: 40px;"  width="120px"/></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Feb 2022 - Current</h4>
+                            <h4 class="subheading">KBMPTI 2022</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-white">Staff in the Information and Communication Center department. Here I work in the creative media section where this section is in charge of layouting all information displayed on KBMPTI's social media.</p></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/logo_display1.png" alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Feb 2022 - Current</h4>
+                            <h4 class="subheading">LPM Display</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-white">Multimedia division staff. Here I am in charge of doing the layouting of all information displayed on LPM Display's social media. I also have experience as a reporter for several video products owned by LPM Display.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/logo_em.png" width="130px" alt="..." style="padding-top:10px ;" /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Mar 2022 - Current</h4>
+                            <h4 class="subheading">EM UB 2022</h4>
+                        </div>
+                        <div class="timeline-body"><p class="text-white">Staff at the Digital Visualization Communication Bureau, to be precise in the information technology section. Here I am in charge of doing layouting and building a website belonging to EM UB 2022 to become a digital branding institution.</p></div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+  <!-- Form -->
+    <section class="form-section">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Want Hire Me</h3>
+            <h2 class="mb-5">Fill this Form</h2>
+        </div>
+        <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01">First name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Last name" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefaultUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="usernametanda">@</span>
+              </div>
+                  <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+              </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">City</label>
+                <input type="text" class="form-control" id="city" placeholder="City" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault04">State</label>
+                <input type="text" class="form-control" id="state" placeholder="State" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault05">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="Zip" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" >Submit form</button>
+          </form>
+    </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with me on social networks :</span>
+      </div>
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </section>
+    <section class="">
+      <div class="container text-left text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <img src="img/logo.png" alt="" width="150px">My Pages
+            </h6>
+            <p>
+              Nama : Salvia Dyah Kurniasari <br>
+              NIM : 215150601111006 <br>
+              Kelas : PTI (DAP)-B
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Jl. Simpang Candi Panggung</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i> salviakurniasari@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 0821 3250 4620</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  </footer>
+
+</body>
+</html>
